@@ -1,0 +1,55 @@
+.wrapper{
+    padding: 5%; /* Chanhge Padding*/ 
+    display: grid;
+    grid-template-columns: auto auto;   
+    background-color:white;
+}
+.day{
+    text-align: center;
+    padding:10px;
+    margin: 25px;
+    background-color:grey;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.page-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: auto;
+}
+
+.demo-card-square{
+    margin-left: 25px ;
+}
+.demo-card-square.mdl-card {
+    /* width: 320px; */
+    width : 20vw;
+    height: 45vh;
+}
+
+.demo-card-square>.mdl-card__title {
+    /* height: 20vh; */
+    color: #fff;
+    background-color:cornflowerblue;
+    /* background: */
+        /* url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC; */
+}
+
+@media screen and (max-width:800px) {
+    .page-content{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        width: auto;
+        /* padding: auto; */
+        padding: 20px;
+    }
+    .demo-card-square.mdl-card{
+        width: auto;
+        height: 30vh;
+        /* margin-left: 20px; */
+        margin-bottom: 20px;
+    }
+}
